@@ -1,7 +1,29 @@
 \chapter{A Classical Scalar Field}
 
-From classical physics, interaction between bodies seems to be instantaneous. Consider the Coulomb's Law describing the interaction between charged particles $q_1$ and $q_2$ separated by a distance $r$ in the direction $\hat{r}$. If we change the position of particle 1 a little bit, then particle 2 instantaneously feels the effects according to $\textbf{F}_e=(kq_1q_2/r^2)\hat{r}$. This is problematic, for the reason that causal influences cannot travel faster than light -- following principles of special relativity. Thus, for relativistically valid laws of physics, interaction cannot be instantaneous. One successful solution to this problem is to describe the interaction of the charged particles in terms of the mediating electromagnetic field. Instead of particle 1 instantaneously affecting particle 2, we can think that the change in particle 1 creates a local disturbance in the electromagnetic field surrounding the particle, and this distrubance travels away from particle 1's position at the speed of light, eventually reaching particle 2. We can use the Maxwell's equation to describe this propagation of electromagnetic fields, which is surprisingly consistent with principles of relativity. This approach also applies to analogous problems in quantum mechanics. We will find that a relativistic theory of quantum mechanics not only requires interactions to be described by fields, but particles themselves must be describe in terms of fields.
+From classical physics, interaction between bodies seems to be instantaneous. Consider the Coulomb's Law describing the interaction between charged particles $q_1$ and $q_2$ separated by a distance $r$ in the direction $\hat{r}$. If we introduce even a small change in the position of particle 1, then particle 2 will instantaneously feel the effects according to $\textbf{F}_e=(kq_1q_2/r^2)\hat{r}$. This is problematic, for the reason that causal influences cannot travel faster than light -- following principles of special relativity. Thus, for relativistically valid laws of physics, interaction cannot be instantaneous. One successful solution to this problem is to describe the interaction of the charged particles in terms of the mediating electromagnetic field. Instead of particle 1 instantaneously affecting particle 2, we can think that the change in particle 1 creates a local disturbance in the electromagnetic field surrounding the particle, and this distrubance travels away from particle 1's position at the speed of light, eventually reaching particle 2. We can use the Maxwell's equation to describe this propagation of electromagnetic fields, which is surprisingly consistent with principles of relativity. This approach also applies to analogous problems in quantum mechanics. We will find that a relativistic theory of quantum mechanics not only requires interactions to be described by fields, but particles themselves must be describe in terms of fields.
 
 We might think that we have found the ultimate answer to make any physical laws relativistically valid. However, the field description of even the simplest realistic particle, such as the electron, is not straightforward to be obtained. It is then instructive to start with the simplest case in terms of mathematical complexity involved. We consider a scalar field, which assigns a frame-independent number at every point in space and time. Although, take note that no low-mass elementary particle is described by such a field, aside from the Higgs Boson.
 
-\section{The Principle of Least Action}
+The behavior of both classical and quantum fields are best described using Lagrangians instead of Newton's second law. It is then instructive to present Lagrangian mechanics in the following sections.
+
+	\section{The Principle of Least Action}
+	The formulation of Lagrangian mechanics arguably starts with
+	\begin{quote}
+		\textbf{Fermat's principle}. The path taken by a light beam traveling between two points minimizes the travel time between those points.
+	\end{quote}
+	Then further generalized by many thinkers in the 1700s. One notable formulation is given by
+	\begin{quote}
+		\textbf{Maupertuis principle of action}. `` This is the principle of least action, a principle so wise and so worthy of the supreme Being, and intrinsic to all natural phenomena; one observes it at work not only in every change, but also in every constancy that Nature exhibits. In the collision of bodies, motion is distributed such that the quatity of action is as small as possible, given that collision occurs. At equilibrium, the bodies are arranged such that, if they were to undergo a small movement, the quantity of action would be smallest. ''
+	\end{quote}
+	With the development of calculus of variations by Euler and Lagrange, calculating the trajectories that minimize the action was made possible. Nowadays, we use the formulation of Hamilton, which defines the action to be
+	\begin{equation}
+		S\equiv\int L(q_i,\dot{q}_i,t) \, dt \;.
+	\end{equation}
+	The currently accepted formulation of the least action is given by
+	\begin{quote}
+		\textbf{Hamilton's principle}. It states that we can determine the time evolution of the generalized coordinate $q_i(t)$, i.e., the equation of motion, by extremizing the action $S$ between fixed initial and final points.
+	\end{quote}
+	Thus, the Lagrangian $L$ contains the physics of the system.
+	
+	\section{The Euler-Lagrange Equations}
+	
